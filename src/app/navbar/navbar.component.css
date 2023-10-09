@@ -1,0 +1,25 @@
+h1 {
+    color: var(--h1-primary);
+}
+
+nav {
+    background-color: var(--navbar-dark);
+    border-top: solid 1px var(--navbar-line-dark);
+    border-bottom: solid 1px var(--navbar-line-dark);
+}
+
+.navbar-brand {
+    margin-left:20px;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.logo {
+    max-width: 5%;
+    height: auto;
+
+}

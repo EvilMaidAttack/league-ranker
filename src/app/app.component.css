@@ -1,0 +1,14 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 60vh; /* Optional: Make the container take up the full viewport height */
+  }
+
+  .icon {
+    max-width: 30%;
+    height: auto;
+  }

@@ -1,0 +1,8 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "./font-styles.css";
+
+body {
+    font-family: 'BeaufortforLOL' sans-serif;
+    background: #1C1C1F;
+}

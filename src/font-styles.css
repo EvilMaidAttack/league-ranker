@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('./assets/fonts/BeaufortforLOL-Bold.otf') format('opentype'),
+  }
+  
+  /* You can also define styles using your custom font */
+  body {
+    font-family: 'BeaufortforLOL', sans-serif;
+  }
