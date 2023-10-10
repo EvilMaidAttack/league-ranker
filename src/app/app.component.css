@@ -12,3 +12,11 @@
     max-width: 30%;
     height: auto;
   }
+
+  .btn-dark {
+    background-color: #31313C
+  }
+
+  .dark {
+    background-color: #31313C;
+  }
