@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button class="btn btn-dark" (click)="toggleDropdown()">{{selectedOption}}</button>
+    <div class="dropdown-content" *ngIf="isDropdownOpen">
+      <a (click)="selectOption('EUW')">EUW</a>
+      <a (click)="selectOption('NA')">NA</a>
+      <a (click)="selectOption('EUNE')">EUNE</a>
+    </div>
+</div>
+  
+  
