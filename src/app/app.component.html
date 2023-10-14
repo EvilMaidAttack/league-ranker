@@ -1,10 +1,18 @@
 <app-navbar></app-navbar>
 
-<div class="container">
-  <img src="/assets/img/viego_bg2.png" alt="background" class="img-fluid icon mb-4">
-
-  <div class="input-group mb-3">
-    <custom-dropdown></custom-dropdown>
-    <input type="search" class="form-control dark" placeholder="Summoner name...">
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="container">
+    <img src="/assets/img/viego_bg2.png" alt="background" class="img-fluid icon mb-4">
+  
+    <div class="input-group mb-3">
+      <custom-dropdown (selectedOptionEvent)="receiveRegionData($event)"></custom-dropdown>
+      <input 
+          formControlName = "summonerName"
+          type="search" class="form-control dark" 
+          placeholder="Summoner name..."
+          >
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+    <p>{{form.value | json}}</p>
   </div>
-</div>
+</form>

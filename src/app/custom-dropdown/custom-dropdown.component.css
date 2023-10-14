@@ -28,7 +28,10 @@
     cursor: pointer;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown-content {
     display: block;
   }
   
+  .bi {
+    float: right;
+  }
