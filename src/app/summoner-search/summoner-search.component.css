@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 60vh; /* Optional: Make the container take up the full viewport height */
+  }
+
+  .icon {
+    max-width: 30%;
+    height: auto;
+  }
+
+  .btn-dark {
+    background-color: #31313C
+  }
+
+  .dark {
+    background-color: #31313C;
+  }
+
+  .input-group {
+    height: 60px;
+  }
+
+  input:focus, input {
+    border: none;
+    color: white;
+  }
+
+  input::placeholder {
+    color: #767489
+  }
+
+  .form-control:focus {
+    border-color: transparent; /* Remove the border */
+    box-shadow: none; /* Remove the box-shadow */
+  }

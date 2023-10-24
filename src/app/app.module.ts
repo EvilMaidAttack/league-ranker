@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CustomDropdownComponent } from './custom-dropdown/custom-dropdown.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SummonerSearchComponent } from './summoner-search/summoner-search.component';
+import { SummonerService } from './common/summoner.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CustomDropdownComponent
+    CustomDropdownComponent,
+    SummonerSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [SummonerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

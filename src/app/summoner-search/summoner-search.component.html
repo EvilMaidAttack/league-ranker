@@ -1,0 +1,17 @@
+<form [formGroup]="form">
+    <div class="container">
+      <img src="/assets/img/viego_bg2.png" alt="background" class="img-fluid icon mb-4">
+    
+      <div class="input-group mb-3">
+        <custom-dropdown (selectedOptionEvent)="receiveRegionData($event)"></custom-dropdown>
+        <input 
+            formControlName = "summonerName"
+            type="search" class="form-control dark" 
+            placeholder="Summoner name..."
+            (keydown.enter)="preventFocusAndSubmit($event)"
+            >
+      </div>
+      <button class="btn btn-primary" type="submit" (click)="submit()">Search</button>
+      <p>{{form.value | json}}</p>
+    </div>
+  </form>
