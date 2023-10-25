@@ -8,6 +8,7 @@ import { CustomDropdownComponent } from './custom-dropdown/custom-dropdown.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SummonerSearchComponent } from './summoner-search/summoner-search.component';
 import { SummonerService } from './common/summoner.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SummonerService } from './common/summoner.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [SummonerService],
   bootstrap: [AppComponent]

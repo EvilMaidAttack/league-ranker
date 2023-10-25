@@ -37,7 +37,13 @@ export class SummonerSearchComponent {
 
 
   submit(){
-    console.log(this.form.value);
+    console.log();
+    
+    this.service.getSummonerByName(this.region?.value, this.summonerName?.value).subscribe(
+      response => {
+        console.log(response)
+      }
+    )
   }
 
 
