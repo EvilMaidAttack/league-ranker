@@ -10,7 +10,7 @@ import { SummonerService } from '../common/summoner.service';
 export class SummonerSearchComponent {
   form = new FormGroup({
     summonerName: new FormControl(""),
-    region: new FormControl("EUW")
+    region: new FormControl("")
   })
 
   constructor(private service: SummonerService){

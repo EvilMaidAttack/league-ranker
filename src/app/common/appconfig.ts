@@ -15,7 +15,7 @@ export const regionData = {
     "vn2": "Vietnam",
     "th2": "Thailand"
   };
-
+  
 export function getUrlByRegion(regionName: string){
     let regionCode = regionData[regionName];
     return `https://${regionCode}.api.riotgames.com/lol/`;
