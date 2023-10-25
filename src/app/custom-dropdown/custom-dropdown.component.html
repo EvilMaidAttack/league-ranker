@@ -6,9 +6,7 @@
       {{selectedOption}} <i class="bi" [class.bi-caret-up-fill]="isDropdownOpen" [class.bi-caret-down-fill]="!isDropdownOpen"></i>
     </button>
     <div class="dropdown-content" *ngIf="isDropdownOpen">
-      <a (click)="selectOption('EUW')">EUW</a>
-      <a (click)="selectOption('NA')">NA</a>
-      <a (click)="selectOption('EUNE')">EUNE</a>
+      <a *ngFor="let regionCode in regionData" (click)="selectOption('regionData[regionName]')">{{regionData[regionCode]}} </a>
     </div>
 </div>
   

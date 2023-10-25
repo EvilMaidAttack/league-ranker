@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { regionData } from '../common/appconfig';
 
 @Component({
   selector: 'custom-dropdown',
@@ -7,8 +8,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class CustomDropdownComponent {
   isDropdownOpen = false;
-  selectedOption = "EUW";
+  selectedOption = regionData["na1"]
   @Output("selectedOptionEvent") selectedOptionEvent = new EventEmitter()
+  regionData = regionData
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
