@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,22 +10,34 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SummonerSearchComponent } from './summoner-search/summoner-search.component';
 import { SummonerService } from './common/summoner.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SummonerProfileComponent } from './summoner-profile/summoner-profile.component';
+import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
+import { CommonModule } from '@angular/common';
+import { DataDragonService } from './common/data-dragon.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CustomDropdownComponent,
-    SummonerSearchComponent
+    SummonerSearchComponent,
+    SummonerProfileComponent,
+    NotFoundComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    RouterModule.forRoot([
+      {path: 'summoners/:regionCode/:summonerName', component: SummonerProfileComponent},
+      {path: '', component: SummonerSearchComponent},
+      {path: '**', component: NotFoundComponentComponent},
+    ])
   ],
-  providers: [SummonerService],
+  providers: [SummonerService, DataDragonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

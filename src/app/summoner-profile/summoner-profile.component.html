@@ -1,0 +1,22 @@
+<div *ngIf="responseData" class="profile-info">
+
+    <div class="profile-icon">
+        <img [src]="profileIconUrl" [alt]="'icon' + responseData?.profileIconId" class="img-fluid image">
+        <div class="level">
+            <span class="level">
+                {{responseData?.summonerLevel}}
+            </span>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="name">
+            <h1>{{responseData?.name}}</h1>
+        </div>
+        <div class="ranking">
+            <div *ngIf="rankingData">Ranked solo: {{rankingData?.tier | titlecase}} {{rankingData?.rank}} </div>
+            <div *ngIf="!rankingData">Ranked solo: --</div>
+        </div>
+    </div>
+
+</div>

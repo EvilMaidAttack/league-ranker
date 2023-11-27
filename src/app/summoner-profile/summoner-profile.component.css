@@ -1,0 +1,50 @@
+/*General styling*/
+.profile-info {
+    color: white;
+    position: relative;
+    display: flex;
+    width: 1080px;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+
+/*icon related styling*/
+.profile-icon {
+    width: 128px;
+}
+
+div.level {
+
+    text-align: center;
+    margin-top: -11px;
+}
+
+.image {
+    border-radius: 20%;
+}
+
+span.level {
+    background-color: var(--profile-icon-dark);
+    padding: 0px 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 25px;
+}
+
+
+/*name related styling*/
+h1 {
+    font-size: 32px;
+}
+
+.info {
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    margin-left: 24px;
+
+}
+
+
+

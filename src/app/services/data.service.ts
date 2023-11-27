@@ -6,6 +6,8 @@ export class DataService {
 
   constructor(private url: string, private http: HttpClient) { }
 
-  getSummonerbySummonerName
+  getSummoner(){
+    
+  }
 
 }

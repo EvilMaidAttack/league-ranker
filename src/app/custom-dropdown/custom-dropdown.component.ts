@@ -8,7 +8,7 @@ import { regionData } from '../common/appconfig';
 })
 export class CustomDropdownComponent {
   isDropdownOpen = false;
-  selectedOption = "Region ...";
+  selectedOption = "Region... ";
   @Output("selectedOptionEvent") selectedOptionEvent = new EventEmitter()
   regionData = regionData
 

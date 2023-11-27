@@ -11,7 +11,11 @@
             (keydown.enter)="preventFocusAndSubmit($event)"
             >
       </div>
-      <button class="btn btn-primary" type="submit" (click)="submit()">Search</button>
+      <button 
+        class="btn btn-primary" 
+        type="submit" 
+        [routerLink]="['/summoners', region?.value, summonerName?.value]"
+        >Search</button>
       <p>{{form.value | json}}</p>
     </div>
   </form>

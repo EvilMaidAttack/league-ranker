@@ -32,19 +32,8 @@ export class SummonerSearchComponent {
 
   preventFocusAndSubmit(event){
     event.preventDefault();
-    this.submit();
   }
 
-
-  submit(){
-    console.log();
-    
-    this.service.getSummonerByName(this.region?.value, this.summonerName?.value).subscribe(
-      response => {
-        console.log(response)
-      }
-    )
-  }
 
 
 }
